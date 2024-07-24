@@ -13,15 +13,15 @@ import base64
 # Set environment variables
 FILE_PATH = os.environ.get('FILE_PATH', '/tmp')
 UUID = os.environ.get('UUID', '9650d70e-2d06-4341-aa72-2705d6306e49')
-NEZHA_SERVER = os.environ.get('NEZHA_SERVER', 'agent.oklala.filegear-sg.me')        # 哪吒3个变量不全不运行
+NEZHA_SERVER = os.environ.get('NEZHA_SERVER', '')        # 哪吒3个变量不全不运行
 NEZHA_PORT = os.environ.get('NEZHA_PORT', '443')                  # 哪吒端口为{443,8443,2096,2087,2083,2053}其中之一时开启tls
-NEZHA_KEY = os.environ.get('NEZHA_KEY', 'ThivksosPy3WcfJdqU')
-ARGO_DOMAIN = os.environ.get('ARGO_DOMAIN', 'a35.oklala.top')
-ARGO_AUTH = os.environ.get('ARGO_AUTH', 'eyJhIjoiYTUyYzFmMDk1MzAyNTU0YjA3NzJkNjU4ODI0MjRlMzUiLCJ0IjoiYjAyYzhmNzMtMjg5Ni00MzY3LWJlYTAtOTNmZGFkM2QwZmU3IiwicyI6Ik16Z3hNRGs1WmpNdE1UaGlOQzAwTldWbUxUa3dOVEV0WXpaa1pXUmpNV1EwTkdFMyJ9')
-CFIP = os.environ.get('CFIP', 'hk.oklala.top')
+NEZHA_KEY = os.environ.get('NEZHA_KEY', '')
+ARGO_DOMAIN = os.environ.get('ARGO_DOMAIN', '')
+ARGO_AUTH = os.environ.get('ARGO_AUTH', '')
+CFIP = os.environ.get('CFIP', '')
 NAME = os.environ.get('NAME', 'marscode')
-PORT = int(os.environ.get('SERVER_PORT') or os.environ.get('PORT') or 8080)  # 订阅端口，游戏玩具类若无法订阅可改为分配的端口
-ARGO_PORT = int(os.environ.get('ARGO_PORT', 8001))       # Argo端口，固定隧道token请改回8080或在cf后台设置的端口与这里对应
+PORT = int(os.environ.get('SERVER_PORT') or os.environ.get('PORT') or 8080)  # 订阅端口，http
+ARGO_PORT = int(os.environ.get('ARGO_PORT', 8001))       # Argo端口，或在cf后台设置的端口与这里对应
 CFPORT = int(os.environ.get('CFPORT', 443))           # 节点端口
 
 # Create directory if it doesn't exist
